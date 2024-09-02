@@ -1,6 +1,9 @@
-#define BLYNK_TEMPLATE_ID "TMPL6Ie709TA-"
-#define BLYNK_TEMPLATE_NAME "Hostel Living Room"
-#define BLYNK_AUTH_TOKEN "Q3miNq258KlOO5fYmxjoRuNKgwcBLgxu"
+#define BLYNK_TEMPLATE_ID "......" 
+#define BLYNK_TEMPLATE_NAME "........"  
+#define BLYNK_AUTH_TOKEN "..........."  
+// replace with your template id 
+// replace with your template name 
+// replace with your AUTH token generated from blynk cloud
 
 #include <ESP8266WiFi.h>
 #include <BlynkSimpleEsp8266.h>
@@ -9,8 +12,8 @@
 #include <SinricProSwitch.h>
 
 // WiFi credentials
-char ssid[] = "moye moye";
-char pass[] = "77777777";
+char ssid[] = "your_wifi_name"; //replace it with your wifi name
+char pass[] = "wifi_password";  //replace it with your wifi password
 
 // Relay and Switch pin definitions
 #define RelayPin1 D5
@@ -33,12 +36,14 @@ int toggleState_4;
 int toggleState_5;
 
 // Sinric Pro credentials
-#define APP_KEY "ee2639d5-b554-431b-842d-59d4b6edcff9"
-#define APP_SECRET "4c474a22-2110-452b-a8f7-54aca19232a4-e49786ab-903c-4c92-aa00-56d2faffc307"
+// replace with your credentials
+#define APP_KEY "................"
+#define APP_SECRET "......................"
 
-#define SWITCH_ID_1 "66abe47f6e1af3593521707c"
-#define SWITCH_ID_2 "66abe58d5d818a66fad58871"
-#define SWITCH_ID_3 "66abe5cc888aa7f7a2547c1d"
+// replace with your switch ids
+#define SWITCH_ID_1 "................"
+#define SWITCH_ID_2 ".................."
+#define SWITCH_ID_3 "................."
 
 SinricProSwitch &mySwitch1 = SinricPro[SWITCH_ID_1];
 SinricProSwitch &mySwitch2 = SinricPro[SWITCH_ID_2];
