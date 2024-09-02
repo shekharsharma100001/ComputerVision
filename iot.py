@@ -18,11 +18,11 @@ async def send_async_request(url):
             print(f"Request failed: {e}")
 
 def fingers_close():
-    asyncio.run(send_async_request("https://blynk.cloud/external/api/update?token=Q3miNq258KlOO5fYmxjoRuNKgwcBLgxu&v5=0"))
+    asyncio.run(send_async_request(Your_HTTPS_Request))  # repplace it with your https request generated from Blynk Cloud
     print("Thumb and index finger are close to each other!")
 
 def fingers_apart():
-    asyncio.run(send_async_request("https://blynk.cloud/external/api/update?token=Q3miNq258KlOO5fYmxjoRuNKgwcBLgxu&v5=1"))
+    asyncio.run(send_async_request(Your_HTTPS_Request))  # repplace it with your https request generated from Blynk Cloud
     print("Thumb and index finger are apart from each other!")
 
 def calculate_distance(x1, y1, x2, y2):
